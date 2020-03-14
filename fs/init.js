@@ -18,12 +18,12 @@ GPIO.set_mode(gsmPwrKeyPin, GPIO.MODE_OUTPUT);
 //GPIO.write(gsmSwitchPin, 1); // Turn on gsm module
 GPIO.write(gsmPwrKeyPin, 1);
 
-Timer.set(2000, 0, function () {
+Timer.set(1500, 0, function () {
     // Wait for sometime
 }, null);
 
 // Turn Power Key pin low for 1200 ms to turn on the module
-Timer.set(3000, 0, function () {
+Timer.set(2000, 0, function () {
     GPIO.write(gsmPwrKeyPin, 0);
 }, null);
 GPIO.write(gsmPwrKeyPin, 1);
