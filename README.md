@@ -2,8 +2,8 @@
 
 Mongoose OS firmware for M6315
 
-https://github.com/ushijimamit/pppos
+https://github.com/ushijimamit/pppos-m6315
 
-mos build --platform esp32 --verbose --clean --local
+mos build --arch esp32 --verbose --clean --local
 
 mos flash build/fw.zip --esp-erase-chip --catch-core-dumps no
